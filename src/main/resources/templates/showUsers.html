@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>展示用户数据</title>
+</head>
+<body>
+	<table boder="1" style="width:300px;">
+		<tr>
+			<th>用户ID</th>
+			<th>用户名</th>
+			<th>用户密码</th>
+		</tr>
+		
+		<tr th:each="user : ${list}">
+			<td th:text="${user.id}"></td>
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.password}"></td>
+		</tr>
+		
+	</table>
+</body>
+</html>
